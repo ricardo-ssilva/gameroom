@@ -17,7 +17,6 @@ body {
 
 /* CSS Global */
 header {
-    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -132,7 +131,7 @@ button {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 32px;
-   
+
 }
 .desc-txt {
     font-size: 20px;
@@ -140,11 +139,11 @@ button {
 }
 .widget {
     width: 300px;
-    height: auto;
+    height: 300px;
     z-index: 99;
 }
 .widget img {
-    width: 100%;
+    width: 300px;
     z-index: 99;
 }
 
@@ -152,6 +151,7 @@ button {
 /* Pagina */
 .banner1 {
    display: flex;
+   width: 100%;
    background-image:  linear-gradient(127deg, #010A1B, #001B39,#001C41);
 }
 .banner-leftside {
@@ -159,8 +159,12 @@ button {
     color: var(--second-color);
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex: 1;
-    padding: 0px 0px 0px 40px;
+    /* padding: 0px 0px 0px 40px; */
+}
+.subtitle-txt {
+    width: 600px;
 }
 .banner-img {
     display: flex;
@@ -168,7 +172,7 @@ button {
     flex: 1.1;
 }
 .banner-img img {
-    width: 100%;
+    width: 755px;
    
 } 
 .banner-buttons {
@@ -306,3 +310,42 @@ button {
     margin:  4px ;
     /* height: 80%; */
 }
+
+@media (min-width: 1921px)  {
+    header {
+        width: 2560px;
+    }
+    .banner-img img {
+        width: 1340px;
+    }
+    .title-txt {
+        font-size: 60px;
+    }
+    .subtitle-txt {
+        width: 882px;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 32px;
+    }
+    .desc-txt {
+        font-size: 20px;
+        width: 882px;
+        font-size: 32px;
+    }
+    .banner-buttons button {
+        width: 292px;
+        height: 71px;
+        font-size: 22px;
+    }
+    .widget {
+        width: 450px;
+        margin-bottom: ;
+    }
+    .widget img {
+        width: 100%;
+        margin-top: -72px;
+       
+    }
+
+    
+} 
